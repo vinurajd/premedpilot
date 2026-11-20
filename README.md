@@ -1,5 +1,7 @@
 # PremedPilot
 
+[Download the latest skill zip](https://github.com/vinurajd/premedpilot/releases/latest) · MIT licensed · free
+
 An AI-powered **BS/MD & pre-med pathway advisor** for high school students navigating the path to medical school, packaged as a portable agent skill.
 
 A three-role advising system (Compass → Scholar + Pathfinder) builds a student persona, matches it against bundled datasets of BS/MD combined programs and strong undergraduate pre-med pathways, classifies every recommendation on a calibrated five-level scale (Guaranteed / High Probability / Somewhat Probable / Low Probability / No Chance At All) with commentary on what would move it up one level, and delivers one collated CSV with a counselor's summary.
@@ -27,7 +29,7 @@ gemini skills install https://github.com/vinurajd/premedpilot.git --path skills/
 
 Or copy `skills/premedpilot/` into `~/.gemini/skills/` or `~/.agents/skills/`.
 
-### Muse
+### Muse (manual)
 
 Copy `skills/premedpilot/` into `~/workspace/custom-skills/`.
 
@@ -60,7 +62,6 @@ Questions about how it works, what the classifications mean, or how current the 
 ├── marketplace.json       # same catalog, at the root for hosts that read it there
 └── skills/
     └── premedpilot/
-        ├── SKILL.md                          # the skill (all hosts)
         ├── SKILL.md                          # the skill (all hosts)
         ├── FAQ.md                            # usage help, also presented on PremedPilot --help
         └── references/
