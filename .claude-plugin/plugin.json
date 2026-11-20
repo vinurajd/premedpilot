@@ -1,5 +1,6 @@
 {
   "name": "premedpilot",
+  "displayName": "PremedPilot",
   "version": "1.0.0",
   "description": "BS/MD and pre-med pathway advisor for high school students: persona-based matching against bundled program datasets, calibrated five-level classifications, and a collated recommendations CSV.",
   "author": {
