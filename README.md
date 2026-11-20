@@ -61,17 +61,18 @@ Questions about how it works, what the classifications mean, or how current the 
 └── skills/
     └── premedpilot/
         ├── SKILL.md                          # the skill (all hosts)
-        ├── references/
-        │   ├── dataset_bsmd_programs.json    # BS/MD programs (78 in this snapshot)
-        │   ├── dataset_premed_pathways.json  # pre-med pathways (25 in this snapshot)
-        │   └── agent-instructions.md         # original three-agent instructions, verbatim
-        └── scripts/
-            └── generate_csv.py               # collates the two analysis files into the final CSV
+        ├── SKILL.md                          # the skill (all hosts)
+        ├── FAQ.md                            # usage help, also presented on PremedPilot --help
+        └── references/
+            ├── dataset_bsmd_programs.json    # BS/MD programs (78 in this snapshot)
+            ├── dataset_premed_pathways.json  # pre-med pathways (25 in this snapshot)
+            ├── knowledge-manifest.json       # published dataset versions and SHA-256 hashes
+            └── agent-instructions.md         # original three-agent instructions, verbatim
 ```
 
 ## Knowledge updates
 
-The two datasets are maintained in this repository, and installed copies of the skill pull updates from here. Each refresh is also published as a GitHub Release carrying a downloadable skill zip; those release downloads are the counted install channel, so please take the zip from Releases rather than cloning when you only want the skill. The skill's `scripts/update_knowledge.py` checks `references/knowledge-manifest.json` at most once a week, verifies each changed dataset against its published SHA-256 hash and the schema, and swaps it in, keeping the previous file as a backup. Offline, the bundled data is used and its date is stated to the student. Maintainers refresh the data once per admissions cycle under the protocol in the SKILL.md, and regenerate the manifest with `scripts/build_manifest.py` after every change.
+The two datasets are maintained in this repository, and installed copies of the skill pull updates from here. Each refresh is also published as a GitHub Release carrying a downloadable skill zip; those release downloads are the counted install channel, so please take the zip from Releases rather than cloning when you only want the skill. At most once a week, the skill checks `references/knowledge-manifest.json` here, verifies each changed dataset against its published SHA-256 hash and the schema, and swaps it in, keeping the previous file as a backup. The skill ships no code: the agent performs the check from the procedure written in the SKILL.md, and a host that cannot fetch or write files simply works from the bundled data. Offline, the bundled data is used and its date is stated to the student. Maintainers refresh the data once per admissions cycle under the protocol in the SKILL.md, and regenerate the manifest after every change.
 
 ## Data
 

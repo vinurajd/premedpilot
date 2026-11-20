@@ -6,6 +6,7 @@
     "name": "Vinuraj Devaraj"
   },
   "license": "MIT",
+  "icon": ".claude-plugin/icon.png",
   "keywords": [
     "bsmd",
     "pre-med",
