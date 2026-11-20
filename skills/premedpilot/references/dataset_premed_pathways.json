@@ -1,0 +1,984 @@
+{
+  "dataset_id": "dataset:premed_pathways",
+  "description": "Universities widely recognized as strong undergraduate launching points into medical school (not combined BS/MD programs). Owned by Pathfinder (Pre-Med Pathway Advisor Agent). This is explicitly NOT an admission guarantee list — it reflects reputation for pre-health advising, research access, clinical exposure opportunities, and reported medical-school placement, distinct from Dataset 1 (BS/MD).",
+  "last_built": "2026-11-19",
+  "refresh_cycle": "annual, living list (expand/refine incrementally as students ask about specific schools)",
+  "schema_note": "Same 11-field schema as Dataset 1. Selection of institutions reflects general, stable reputation (which schools are known for strong pre-med support) — this does not require year-to-year verification. Specific stats (SAT/ACT ranges, GPA, fees, acceptance/matriculation rates) do require verification and are flagged accordingly.",
+  "programs": [
+    {
+      "university": "Johns Hopkins University",
+      "college_department": "Krieger School of Arts & Sciences / Whiting School of Engineering (the Homewood undergraduate schools; pre-health advising track can be combined with any major)",
+      "state": "Maryland",
+      "city": "Baltimore",
+      "program_duration_years": "4 (standard undergraduate; no linkage/early-assurance guarantee)",
+      "program_status": "live",
+      "in_state_preference": {
+        "status": "verified",
+        "value": "No — private institution; no in-state preference and a single tuition rate regardless of residency",
+        "source": "Johns Hopkins University Common Data Set 2024-2025, Section A2 (Private nonprofit) and Section G1"
+      },
+      "floor_sat": {
+        "status": "verified",
+        "value": "Middle 50% SAT Composite (enrolled first-year students, Fall 2024): 1530-1560 — this is a middle-50% range, not a minimum floor",
+        "source": "Johns Hopkins University Common Data Set 2024-2025, Section C9 (SAT Composite 25th=1530, 50th=1540, 75th=1560)"
+      },
+      "floor_act": {
+        "status": "verified",
+        "value": "Middle 50% ACT Composite (enrolled first-year students, Fall 2024): 34-36 — middle-50% range, not a minimum floor",
+        "source": "Johns Hopkins University Common Data Set 2024-2025, Section C9 (ACT Composite 25th=34, 50th=35, 75th=36)"
+      },
+      "expected_gpa": {
+        "status": "verified",
+        "value": "Average high school GPA 3.93 (CDS C12); CDS C11 distribution: 65.0% had a 4.0 and 27.4% had 3.75-3.99, i.e. 92.4% at 3.75 or above",
+        "source": "Johns Hopkins University Common Data Set 2024-2025, Sections C11/C12"
+      },
+      "annual_fees": {
+        "status": "verified",
+        "value": "2025-2026 academic year (as reported in CDS Section G1): tuition $66,670 + required fees $500 = $67,170 per year",
+        "source": "Johns Hopkins University Common Data Set 2024-2025, Section G1"
+      },
+      "acceptance_rate": {
+        "status": "verified",
+        "value": "General undergraduate acceptance rate: 6.4% (2,954 admitted of 45,895 first-time, first-year applicants, Fall 2024, CDS C1). Medical-school acceptance rate for pre-health graduates (university-published, undated): 85% of medical school applicants admitted to one or more programs",
+        "source": "Johns Hopkins University Common Data Set 2024-2025, Section C1; Johns Hopkins University Admissions, Pre-Health Advising page (apply.jhu.edu/pre-health-at-hopkins)"
+      },
+      "notes": "Benchmark pre-med institution anchored by the Johns Hopkins School of Medicine and Hopkins Hospital research access. The 85% pre-health figure is the university's own admissions-page claim with no cohort year or applicant count stated, so read it as an advising-office figure rather than an audited outcome. JHU also runs a well-regarded postbac program (separate from the undergraduate pre-med track)."
+    },
+    {
+      "university": "Duke University",
+      "college_department": "Trinity College of Arts & Sciences / Pratt School of Engineering (applicants must apply to one of the two; no pre-medicine major is offered, advising is through the Office of Health Professions Advising)",
+      "state": "North Carolina",
+      "city": "Durham",
+      "program_duration_years": "4",
+      "program_status": "live",
+      "in_state_preference": {
+        "status": "verified",
+        "value": "No — private institution; no in-state preference and a single tuition rate regardless of residency",
+        "source": "Duke University Common Data Set 2024-2025, Section A2 (Private nonprofit) and Section G1"
+      },
+      "floor_sat": {
+        "status": "verified",
+        "value": "Middle 50% (enrolled first-year students, Fall 2024): SAT Evidence-Based Reading & Writing 740-770 and SAT Math 760-800 — Duke's CDS C9 does not report a composite range (the section ranges span 1500-1570 combined); these are middle-50% ranges, not minimum floors",
+        "source": "Duke University Common Data Set 2024-2025, Section C9 (composite row left blank)"
+      },
+      "floor_act": {
+        "status": "verified",
+        "value": "Middle 50% ACT Composite (enrolled first-year students, Fall 2024): 34-35 — middle-50% range, not a minimum floor",
+        "source": "Duke University Common Data Set 2024-2025, Section C9 (ACT Composite 25th=34, 50th=35, 75th=35)"
+      },
+      "expected_gpa": {
+        "status": "needs_verification",
+        "value": "",
+        "source": "Duke University Common Data Set 2024-2025, Sections C11/C12 report no GPA data (all entries 0.00% / blank, 0.00% of students submitted GPA), so Duke publishes no admitted/enrolled-student GPA figure in its CDS"
+      },
+      "annual_fees": {
+        "status": "verified",
+        "value": "2025-2026 academic year (as reported in CDS Section G1): tuition $70,265 + required fees $2,907 (first-year) = $73,172 per year",
+        "source": "Duke University Common Data Set 2024-2025, Section G1"
+      },
+      "acceptance_rate": {
+        "status": "verified",
+        "value": "General undergraduate acceptance rate: 5.7% (2,957 admitted of 51,795 first-time, first-year applicants, Fall 2024, CDS C1). Medical-school acceptance rate for Duke pre-med graduates (university-published, undated, no cohort or applicant count given): 85%",
+        "source": "Duke University Common Data Set 2024-2025, Section C1; Duke Undergraduate Admissions, Resources + FAQs (admissions.duke.edu/resources)"
+      },
+      "notes": "Strong pre-health advising and research opportunities via Duke University Medical Center. Duke publishes no GPA distribution in its CDS, so any third-party Duke average-GPA figure is unsourced. Its 85% medical-school figure appears only as an undated admissions FAQ statement; Duke's Health Professions Advising office does not publish a dated, cohort-defined outcome rate on a public page."
+    },
+    {
+      "university": "Northwestern University",
+      "college_department": "Weinberg College of Arts and Sciences / McCormick School of Engineering (pre-meds also enroll in the School of Education and Social Policy, Medill School of Journalism, Bienen School of Music, and School of Communication; Health Professions Advising is university-wide)",
+      "state": "Illinois",
+      "city": "Evanston",
+      "program_duration_years": "4",
+      "program_status": "live",
+      "in_state_preference": {
+        "status": "verified",
+        "value": "No — private institution; no in-state preference and a single tuition rate regardless of residency",
+        "source": "Northwestern University Common Data Set 2024-2025, Section A2 (Private nonprofit) and Section G1"
+      },
+      "floor_sat": {
+        "status": "verified",
+        "value": "Middle 50% SAT Composite (enrolled first-year students, Fall 2024): 1510-1560 — middle-50% range, not a minimum floor",
+        "source": "Northwestern University Common Data Set 2024-2025, Section C9 (SAT Composite 25th=1510, 50th=1540, 75th=1560; 46% of enrolled students submitted SAT scores)"
+      },
+      "floor_act": {
+        "status": "verified",
+        "value": "Middle 50% ACT Composite (enrolled first-year students, Fall 2024): 34-35 — middle-50% range, not a minimum floor",
+        "source": "Northwestern University Common Data Set 2024-2025, Section C9 (ACT Composite 25th=34, 50th=34, 75th=35; 23% submitted ACT scores)"
+      },
+      "expected_gpa": {
+        "status": "needs_verification",
+        "value": "",
+        "source": "Northwestern University Common Data Set 2024-2025, Sections C11/C12 are left blank (GPA-range fields unpopulated and 'Average high school GPA' field empty), so Northwestern publishes no admitted/enrolled-student GPA figure in its CDS"
+      },
+      "annual_fees": {
+        "status": "verified",
+        "value": "2025-2026 academic year (as reported in CDS Section G1): tuition $69,375 + required fees $1,214 = $70,589 per year",
+        "source": "Northwestern University Common Data Set 2024-2025, Section G1"
+      },
+      "acceptance_rate": {
+        "status": "verified",
+        "value": "General undergraduate acceptance rate: 7.7% (3,806 admitted of 49,474 first-time, first-year applicants, Fall 2024, CDS C1). Medical-school acceptance rate for pre-med graduates: not published by the university — Northwestern's Health Professions Advising publishes no university-wide pre-med outcome rate, so no figure is reported here",
+        "source": "Northwestern University Common Data Set 2024-2025, Section C1; absence of a published pre-med outcome rate confirmed against Northwestern Health Professions Advising / Feinberg pages"
+      },
+      "notes": "Note: HPME (Honors Program in Medical Education) is a linkage/early-assurance BS/MD-style program at Northwestern — flagged for Scholar to assess whether it belongs in Dataset 1 instead; this entry covers the general pre-med track. Northwestern reports neither a GPA profile nor a general medical-school acceptance rate, and both are left unverified rather than filled from secondary estimates."
+    },
+    {
+      "university": "Emory University",
+      "college_department": "Emory College of Arts and Sciences / Oxford College (the two undergraduate entry colleges; pre-health students also enroll via Goizueta Business School and the Nell Hodgson Woodruff School of Nursing)",
+      "state": "Georgia",
+      "city": "Atlanta",
+      "program_duration_years": "4",
+      "program_status": "live",
+      "in_state_preference": {
+        "status": "verified",
+        "value": "No — private institution; no in-state preference and the same tuition is charged regardless of residency",
+        "source": "Emory University Common Data Set 2024-2025, Section G1 (private-institution rate with no in-state/out-of-state differential)"
+      },
+      "floor_sat": {
+        "status": "verified",
+        "value": "Middle 50% SAT Composite (enrolled first-year students, Fall 2024): 1480-1540 — middle-50% range, not a minimum floor",
+        "source": "Emory University Common Data Set 2024-2025, Section C9 (SAT Composite 25th=1480, 50th=1510, 75th=1540; 43% submitted SAT scores)"
+      },
+      "floor_act": {
+        "status": "verified",
+        "value": "Middle 50% ACT Composite (enrolled first-year students, Fall 2024): 32-35 — middle-50% range, not a minimum floor",
+        "source": "Emory University Common Data Set 2024-2025, Section C9 (ACT Composite 25th=32, 50th=34, 75th=35; 20% submitted ACT scores)"
+      },
+      "expected_gpa": {
+        "status": "verified",
+        "value": "Average high school GPA 3.84 (CDS C12, 96.24% of students submitted GPA); CDS C11 distribution: 17.41% had a 4.0 and 58.38% had 3.75-3.99, i.e. 75.79% at 3.75 or above",
+        "source": "Emory University Common Data Set 2024-2025, Sections C11/C12"
+      },
+      "annual_fees": {
+        "status": "verified",
+        "value": "2025-2026 academic year (as reported in CDS Section G1): tuition $67,080 + required fees $976 = $68,056 per year",
+        "source": "Emory University Common Data Set 2024-2025, Section G1"
+      },
+      "acceptance_rate": {
+        "status": "verified",
+        "value": "General undergraduate acceptance rate: 10.3% (3,562 admitted of 34,614 first-time, first-year applicants, Fall 2024, CDS C1). Medical-school (MD) acceptance rate for Emory pre-med graduates (university-published): 63% of 380 AMCAS applicants in 2025 (65% in 2024), vs a 45% national acceptance rate in 2025",
+        "source": "Emory University Common Data Set 2024-2025, Section C1; Emory Pre-Health Advising, Outcomes page (prehealth.emory.edu/outcomes.html), AMCAS 2025"
+      },
+      "notes": "Emory provides the most transparent pre-med outcome reporting of the schools in this dataset, publishing year-by-year AMCAS applicant counts and acceptance rates through its Pre-Health Advising office. Its Atlanta location beside Emory University Hospital and the CDC underpins the pre-health pathway."
+    },
+    {
+      "university": "Vanderbilt University",
+      "college_department": "College of Arts and Science / School of Engineering / Peabody College of Education and Human Development / Blair School of Music (Vanderbilt's four undergraduate schools; pre-health students may major in any and are advised by the Health Professions Advisory Office)",
+      "state": "Tennessee",
+      "city": "Nashville",
+      "program_duration_years": "4",
+      "program_status": "live",
+      "in_state_preference": {
+        "status": "verified",
+        "value": "No — private institution; no in-state preference and a single tuition rate regardless of residency",
+        "source": "Vanderbilt University Common Data Set 2024-2025, Section A2 (Private nonprofit) and Vanderbilt Undergraduate Tuition and Fees 2025-2026 page (single tuition rate)"
+      },
+      "floor_sat": {
+        "status": "verified",
+        "value": "Middle 50% SAT Composite (enrolled first-year students, Fall 2024): 1510-1560 — middle-50% range, not a minimum floor",
+        "source": "Vanderbilt University Common Data Set 2024-2025, Section C9 (SAT Composite 25th=1510, 50th=1540, 75th=1560)"
+      },
+      "floor_act": {
+        "status": "verified",
+        "value": "Middle 50% ACT Composite (enrolled first-year students, Fall 2024): 34-35 — middle-50% range, not a minimum floor",
+        "source": "Vanderbilt University Common Data Set 2024-2025, Section C9 (ACT Composite 25th=34, 50th=35, 75th=35)"
+      },
+      "expected_gpa": {
+        "status": "verified",
+        "value": "Average high school GPA 3.89 (CDS C12, 99.94% of students submitted GPA); CDS C11 distribution: 35.9% had a 4.0 and 53.1% had 3.75-3.99, i.e. 89.0% at 3.75 or above",
+        "source": "Vanderbilt University Common Data Set 2024-2025, Sections C11/C12 — Vanderbilt's CDS is published only as a spreadsheet download, so this GPA figure is taken from a secondary extraction of the official document rather than from a directly readable CDS PDF"
+      },
+      "annual_fees": {
+        "status": "verified",
+        "value": "2025-2026 academic year: tuition $67,934 + Student Support Fee (required fee) $3,292 = $71,226 per year",
+        "source": "Vanderbilt University, Undergraduate Tuition and Fees 2025-2026 (vanderbilt.edu/stuaccts/fees/tuition_fees_2025-26_ugrd); total matches Vanderbilt's official 2025-26 cost-of-attendance booklet"
+      },
+      "acceptance_rate": {
+        "status": "verified",
+        "value": "General undergraduate acceptance rate: 5.9% (2,662 admitted of 45,409 first-time, first-year applicants, Fall 2024, CDS C1). Medical-school acceptance rate for Vanderbilt pre-med graduates (university-published, dated): 76% of first-time Vanderbilt applicants to medical school were admitted to at least one allopathic (MD) school for Fall 2018, vs a 41-43% national rate; Vanderbilt's HPAO Outcomes page publishes more recent annual AMCAS reports, but the current figures are not stated in that page's text",
+        "source": "Vanderbilt University Common Data Set 2024-2025, Section C1; Vanderbilt Undergraduate Admissions, Pre-Professional Study page (admissions.vanderbilt.edu/academics/pre-professional); Vanderbilt Health Professions Advisory Office, Outcomes page (vanderbilt.edu/hpao/outcomes)"
+      },
+      "notes": "Strong pre-health advising and Vanderbilt University Medical Center research access. Vanderbilt's CDS is distributed only as a spreadsheet, so its C9/C1 figures were cross-checked across multiple independent extractions of the official file and its GPA figure comes from a secondary extraction. Its only text-stated medical-school outcome (76%) is from Fall 2018 and is dated accordingly; do not present it as a current rate."
+    },
+    {
+      "university": "Washington University in St. Louis",
+      "college_department": "College of Arts & Sciences (most pre-medical students; PreHealth advising is university-wide and students in McKelvey School of Engineering, Olin Business School and Sam Fox School may also pursue pre-health)",
+      "state": "Missouri",
+      "city": "St. Louis",
+      "program_duration_years": "4",
+      "program_status": "live",
+      "in_state_preference": {
+        "status": "verified",
+        "value": "No in-state preference — private nonprofit university; state residency is listed as Not Considered in admissions",
+        "source": "Washington University in St. Louis Common Data Set 2024-2025, Section C7 and Section A2 (private nonprofit control)"
+      },
+      "floor_sat": {
+        "status": "verified",
+        "value": "Middle-50% SAT Composite 1500-1570 (25th-75th percentile, enrolled first-years Fall 2024; 29% submitted SAT) — not a floor/minimum",
+        "source": "Washington University in St. Louis Common Data Set 2024-2025, Section C9"
+      },
+      "floor_act": {
+        "status": "verified",
+        "value": "Middle-50% ACT Composite 33-35 (25th-75th percentile, enrolled first-years Fall 2024; 28% submitted ACT) — not a floor/minimum",
+        "source": "Washington University in St. Louis Common Data Set 2024-2025, Section C9"
+      },
+      "expected_gpa": {
+        "status": "verified",
+        "value": "Average high school GPA 4.19 (C12); 65% of enrolled first-years had GPA 4.0 and 24% had 3.75-3.99 (C11)",
+        "source": "Washington University in St. Louis Common Data Set 2024-2025, Sections C11-C12"
+      },
+      "annual_fees": {
+        "status": "verified",
+        "value": "2025-2026: Tuition $68,240 + required fees $1,354 = $69,594 tuition and required fees (private, same for all residency)",
+        "source": "Washington University in St. Louis Common Data Set 2024-2025, Section G1"
+      },
+      "acceptance_rate": {
+        "status": "verified",
+        "value": "General undergraduate: 12.1% (3,951 admitted of 32,754 applicants, Fall 2024, CDS C1). Medical-school matriculation (university-published, narrow scope): 72% of WashU biology majors who applied to medical school over the last 6 years were accepted, vs 45% national rate for biology majors — biology majors only, not all pre-meds. No university-wide pre-med medical-school acceptance rate is published",
+        "source": "WashU CDS 2024-2025 Section C1 for general rate; WashU Department of Biology undergraduate program page (biology.washu.edu) for the 72% biology-major figure"
+      },
+      "notes": "Elite private pre-med powerhouse closely tied to WashU Medicine, with consistently reported strong med-school placement. No university-wide pre-med medical-school acceptance rate was published in the sources checked — only the biology-major figure above."
+    },
+    {
+      "university": "University of North Carolina at Chapel Hill",
+      "college_department": "College of Arts and Sciences (no formal pre-med major; pre-meds complete a B.A. or B.S. there and use the Office of Health Professions Advising)",
+      "state": "North Carolina",
+      "city": "Chapel Hill",
+      "program_duration_years": "4",
+      "program_status": "live",
+      "in_state_preference": {
+        "status": "verified",
+        "value": "Strong statutory/system preference: UNC System Policy 700.1.3 caps out-of-state enrollment at no more than 18% of the entering first-year class, so at least ~82% of each first-year class must be North Carolina residents; state residency is rated Very Important in CDS C7",
+        "source": "UNC Media Hub (mediahub.unc.edu) describing UNC System Policy 700.1.3; UNC-Chapel Hill Common Data Set 2025-26, Section C7"
+      },
+      "floor_sat": {
+        "status": "verified",
+        "value": "Middle-50% SAT Composite 1400-1530 (25th 1400, median 1470, 75th 1530; enrolled first-years Fall 2025, 28% submitted SAT) — not a floor/minimum",
+        "source": "UNC-Chapel Hill Common Data Set 2025-26, Section C9 (oira.unc.edu PDF)"
+      },
+      "floor_act": {
+        "status": "verified",
+        "value": "Middle-50% ACT Composite 29-34 (25th 29, median 32, 75th 34; enrolled first-years Fall 2025, 41% submitted ACT) — not a floor/minimum",
+        "source": "UNC-Chapel Hill Common Data Set 2025-26, Section C9 (oira.unc.edu PDF)"
+      },
+      "expected_gpa": {
+        "status": "verified",
+        "value": "Average high school GPA 4.47 (weighted, above 4.0 scale); 94.6% of enrolled first-years had GPA 4.0 and ~97% had 3.75 or higher",
+        "source": "UNC-Chapel Hill Common Data Set 2025-26, Sections C11-C12 (oira.unc.edu PDF)"
+      },
+      "annual_fees": {
+        "status": "verified",
+        "value": "2026-2027 costs reported in CDS 2025-26 Section G1: In-state tuition $7,230 + required fees $2,129 = $9,359 tuition and fees; Out-of-state tuition $47,472 + required fees $2,129 = $49,601 tuition and fees",
+        "source": "UNC-Chapel Hill Common Data Set 2025-26, Section G1 (oira.unc.edu PDF)"
+      },
+      "acceptance_rate": {
+        "status": "verified",
+        "value": "General undergraduate: 16.7% (12,751 admitted of 76,247 applicants, Fall 2025, CDS C1); residency split in Fall 2025 was ~37% for NC residents vs ~9-10% for out-of-state applicants. Medical-school matriculation rate for pre-med graduates: not published by the university in sources checked",
+        "source": "UNC-Chapel Hill Common Data Set 2025-26, Section C1 (oira.unc.edu PDF)"
+      },
+      "notes": "Public flagship with strong pre-health advising and exceptional in-state value; the 82/18 residency rule makes out-of-state admission far more selective than the headline rate suggests. Good target for cost-conscious NC-resident students."
+    },
+    {
+      "university": "University of Michigan - Ann Arbor",
+      "college_department": "College of Literature, Science, and the Arts (LSA) — largest undergraduate college and home to Newnan Advising Center pre-health advising; pre-meds also enroll in the College of Engineering and School of Kinesiology",
+      "state": "Michigan",
+      "city": "Ann Arbor",
+      "program_duration_years": "4",
+      "program_status": "live",
+      "in_state_preference": {
+        "status": "verified",
+        "value": "Michigan residency is a Considered factor in admissions (no statutory quota found); in practice residents are admitted at a much higher rate — Michigan Almanac data cited for Fall 2025 show ~42% admit rate for Michigan residents vs ~13% for out-of-state applicants",
+        "source": "University of Michigan Common Data Set 2024-25, Section C7 (state residency = Considered; obp.umich.edu PDF); Fall 2025 residency admit-rate split is secondary reporting of the Michigan Almanac, named as such"
+      },
+      "floor_sat": {
+        "status": "verified",
+        "value": "Middle-50% SAT Composite 1360-1530 (25th 1360, median 1460, 75th 1530; enrolled first-years Fall 2024, 51% submitted SAT) — not a floor/minimum",
+        "source": "University of Michigan Common Data Set 2024-25, Section C9 (obp.umich.edu PDF)"
+      },
+      "floor_act": {
+        "status": "verified",
+        "value": "Middle-50% ACT Composite 31-34 (25th 31, median 33, 75th 34; enrolled first-years Fall 2024, 18% submitted ACT) — not a floor/minimum",
+        "source": "University of Michigan Common Data Set 2024-25, Section C9 (obp.umich.edu PDF)"
+      },
+      "expected_gpa": {
+        "status": "verified",
+        "value": "Average high school GPA 3.90 (C12); 38.8% of enrolled first-years had GPA 4.0 and 54.0% had 3.75-3.99 (C11)",
+        "source": "University of Michigan Common Data Set 2024-25, Sections C11-C12 (obp.umich.edu PDF)"
+      },
+      "annual_fees": {
+        "status": "verified",
+        "value": "2025-2026 (lower division, CDS G1): In-state tuition $17,864 + required fees $482 = $18,346 tuition and fees; Out-of-state tuition $63,480 + required fees $482 = $63,962 tuition and fees. Upper-division rates are higher",
+        "source": "University of Michigan Common Data Set 2024-25, Section G1 (obp.umich.edu PDF); totals match U-M Office of Budget and Planning Estimated Cost of Attendance 2025-26"
+      },
+      "acceptance_rate": {
+        "status": "verified",
+        "value": "General undergraduate: 15.6% (15,373 admitted of 98,310 applicants, Fall 2024, CDS C1). Medical-school matriculation rate for pre-med graduates: not published by the university in sources checked",
+        "source": "University of Michigan Common Data Set 2024-25, Section C1 (obp.umich.edu PDF)"
+      },
+      "notes": "Top public research university; LSA is the main pre-med home with dedicated pre-health advisors in the Newnan Center, and strong research access via Michigan Medicine. Large public option."
+    },
+    {
+      "university": "University of California, Los Angeles (UCLA)",
+      "college_department": "UCLA College of Letters and Science, Division of Life Sciences (most pre-health students; UCLA states a majority of incoming Life Sciences students are self-designated pre-health and there is no designated pre-med major)",
+      "state": "California",
+      "city": "Los Angeles",
+      "program_duration_years": "4",
+      "program_status": "live",
+      "in_state_preference": {
+        "status": "verified",
+        "value": "California-resident preference: UC states its priority is to enroll California residents, nonresident admits must compare favorably to resident admits, and the minimum GPA is 3.0 for California residents vs 3.4 for nonresidents",
+        "source": "University of California admissions/Accountability pages (universityofcalifornia.edu)"
+      },
+      "floor_sat": {
+        "status": "verified",
+        "value": "No SAT range published — UC is test-free: SAT/ACT scores are Not Considered in admission and UCLA reports no score ranges in its CDS",
+        "source": "UCLA Common Data Set (apb.ucla.edu), Sections C7/C9; UC test-free policy"
+      },
+      "floor_act": {
+        "status": "verified",
+        "value": "No ACT range published — UC is test-free: SAT/ACT scores are Not Considered in admission and UCLA reports no score ranges in its CDS",
+        "source": "UCLA Common Data Set (apb.ucla.edu), Sections C7/C9; UC test-free policy"
+      },
+      "expected_gpa": {
+        "status": "verified",
+        "value": "Fall 2024 admitted first-years: median unweighted GPA 4.0 and median weighted GPA 4.60 (UCLA first-year profile); UC capped weighted middle-50% for admits is about 4.20-4.31 in UC system data",
+        "source": "UCLA Undergraduate Admission First-Year Profile Fall 2024 (admission.ucla.edu); University of California Office of the President admissions data for the capped weighted range"
+      },
+      "annual_fees": {
+        "status": "verified",
+        "value": "2024-2025 (entering cohort, without health insurance): California resident tuition and fees $15,203; Nonresident tuition and fees $49,403",
+        "source": "University of California Office of the President, Total Charges 2024-25 by campus (ucop.edu PDF) — Los Angeles row"
+      },
+      "acceptance_rate": {
+        "status": "verified",
+        "value": "General undergraduate: 9.0% (13,114 admitted of 146,276 applicants, Fall 2024). Medical-school matriculation rate for pre-med graduates: not published by UCLA itself in sources checked (third-party estimates exist but are not university-published)",
+        "source": "UCLA Common Data Set Section C1 Fall 2024 cohort via UCLA Academic Planning and Budget admissions statistics; UCLA Undergraduate Admission Fall 2024 profile"
+      },
+      "notes": "Most-applied-to university in the U.S. and a very large pre-med producer through Life Sciences in the College, with strong pre-health advising and research access via UCLA Health/David Geffen School of Medicine. Test-free status is the key verification point: any SAT/ACT range attributed to UCLA is not from UCLA."
+    },
+    {
+      "university": "University of California, Berkeley",
+      "college_department": "College of Letters and Science (most pre-meds, e.g. Molecular and Cell Biology and Integrative Biology majors); Rausser College of Natural Resources also houses biology majors used for pre-med/pre-health pathways",
+      "state": "California",
+      "city": "Berkeley",
+      "program_duration_years": "4",
+      "program_status": "live",
+      "in_state_preference": {
+        "status": "verified",
+        "value": "California-resident preference: UC states its priority is to enroll California residents, nonresident admits must compare favorably to resident admits, and the minimum GPA is 3.0 for California residents vs 3.4 for nonresidents; Berkeley reported Californians were 79% of Fall 2024 first-year admits",
+        "source": "University of California admissions/Accountability pages (universityofcalifornia.edu); Berkeley News (news.berkeley.edu, Aug 2 2024) for the 79% Californian share of Fall 2024 admits"
+      },
+      "floor_sat": {
+        "status": "verified",
+        "value": "No SAT range published — UC is test-free: SAT/ACT scores are Not Considered in admission and Berkeley reports no score ranges in its CDS",
+        "source": "UC Berkeley Common Data Set 2024-2025 (opa.berkeley.edu), Sections C7/C9; UC test-free policy"
+      },
+      "floor_act": {
+        "status": "verified",
+        "value": "No ACT range published — UC is test-free: SAT/ACT scores are Not Considered in admission and Berkeley reports no score ranges in its CDS",
+        "source": "UC Berkeley Common Data Set 2024-2025 (opa.berkeley.edu), Sections C7/C9; UC test-free policy"
+      },
+      "expected_gpa": {
+        "status": "verified",
+        "value": "Fall 2024 admitted first-years: average unweighted GPA 3.92 and average weighted GPA 4.47 (Berkeley News); CDS enrolled average GPA 3.90, with 37.7% at 4.0 and 51.5% at 3.75-3.99",
+        "source": "Berkeley News fall 2024 admissions release (news.berkeley.edu); UC Berkeley Common Data Set 2024-2025, Sections C11-C12"
+      },
+      "annual_fees": {
+        "status": "verified",
+        "value": "2024-2025 (entering cohort, without health insurance): California resident tuition and fees $16,347; Nonresident tuition and fees $50,547",
+        "source": "University of California Office of the President, Total Charges 2024-25 by campus (ucop.edu PDF) — Berkeley row"
+      },
+      "acceptance_rate": {
+        "status": "verified",
+        "value": "General undergraduate: ~11.0% (about 13,714 admitted of 124,245 applicants, Fall 2024). Medical-school matriculation rate for pre-med graduates: not published by UC Berkeley itself in sources checked",
+        "source": "UC Berkeley Common Data Set 2024-2025, Section C1; Berkeley News fall 2024 admissions release (news.berkeley.edu) reporting an 11% admit rate"
+      },
+      "notes": "Flagship UC campus admitting by college/major, so the overall 11% blends much more selective programs. No medical school of its own, but strong research access, pre-health advising and placement reputation."
+    },
+    {
+      "university": "Boston University",
+      "college_department": "College of Arts & Sciences (CAS) — largest pre-med pathway, e.g. biology, biochemistry & molecular biology, psychology; also Sargent College of Health & Rehabilitation Sciences (health science, human physiology) and College of Engineering (biomedical engineering). Pre-medicine is not a major at BU.",
+      "state": "Massachusetts",
+      "city": "Boston",
+      "program_duration_years": "4 (also offers a separate 7-year BA/MD linkage program — verify with Scholar whether that specific program belongs in Dataset 1)",
+      "program_status": "live",
+      "in_state_preference": {
+        "status": "verified",
+        "value": "No — private institution. No in-state tuition rate and no Massachusetts-resident admissions preference.",
+        "source": "Boston University Common Data Set 2024-2025, Section A2 (Private nonprofit)"
+      },
+      "floor_sat": {
+        "status": "verified",
+        "value": "Middle-50% SAT Composite (enrolled, Fall 2024): 1430-1510 (25th 1430, 50th 1470, 75th 1510) — middle-50%, NOT a floor/minimum. Only 33% of enrolled first-years submitted SAT.",
+        "source": "Boston University Common Data Set 2024-2025, Section C9"
+      },
+      "floor_act": {
+        "status": "verified",
+        "value": "Middle-50% ACT Composite (enrolled, Fall 2024): 32-34 (25th 32, 50th 33, 75th 34) — middle-50%, NOT a floor. Only 10% submitted ACT.",
+        "source": "Boston University Common Data Set 2024-2025, Section C9"
+      },
+      "expected_gpa": {
+        "status": "verified",
+        "value": "Average high school GPA 3.9 (4.0 scale, 100% submitting GPA); 78% of enrolled first-years had GPA 3.75 or above (41% at 4.00, 37% at 3.75-3.99).",
+        "source": "Boston University Common Data Set 2024-2025, Sections C11-C12"
+      },
+      "annual_fees": {
+        "status": "verified",
+        "value": "2024-2025: Tuition $66,670 + mandatory fees $1,432 = $68,102 tuition + required fees (room & board $19,020 additional). Private — same rate for all students.",
+        "source": "Boston University Common Data Set 2024-2025, Section G1"
+      },
+      "acceptance_rate": {
+        "status": "verified",
+        "value": "General undergraduate acceptance rate: 11.1% (8,749 admitted of 78,769 first-year applicants, Fall 2024). Medical-school acceptance rate for BU pre-med graduates: not published by BU in the sources checked — no figure included.",
+        "source": "Boston University Common Data Set 2024-2025, Section C1"
+      },
+      "notes": "Private research university in Boston with its own medical school (Chobanian & Avedisian) and early-assurance routes (MMEDIC; also a separate 7-year BA/MD Liberal Arts/Medical Education program in CAS — verify with Scholar whether that specific program belongs in Dataset 1). All headline figures verified directly from BU's own 2024-2025 CDS."
+    },
+    {
+      "university": "University of Florida",
+      "college_department": "College of Liberal Arts and Sciences (CLAS) — UF's largest college and home of Pre-Health/Pre-Law advising in the Academic Advising Center; pre-med students also enroll in the Colleges of Agricultural and Life Sciences, Engineering, and Public Health and Health Professions.",
+      "state": "Florida",
+      "city": "Gainesville",
+      "program_duration_years": "4",
+      "program_status": "live",
+      "in_state_preference": {
+        "status": "verified",
+        "value": "Yes — public flagship of the State University System of Florida. Florida residents are advantaged: geographical/state residence is a considered factor, about 85% of undergraduates are Florida residents, and in the 2023-24 cycle Florida residents were admitted at a far higher rate than non-residents (52% vs 14% as reported from UF CDS data). Resident tuition is also far lower (see annual_fees).",
+        "source": "UF Common Data Set Section C7 (residence considered) and enrollment composition, as reported by College Transitions from UF CDS data; UF is a public state university (UF CDS Section A2)"
+      },
+      "floor_sat": {
+        "status": "verified",
+        "value": "Enrolled students (CDS): middle-50% SAT 1330-1470 — middle-50%, NOT a floor. Note UF's official admitted-student profile is higher: middle-50% SAT 1420-1520 for all admitted students.",
+        "source": "University of Florida Common Data Set 2024-2025, Section C9 (enrolled); admitted profile from UF Office of Admissions official Student Profile page (admissions.ufl.edu/freshman-student-profile)"
+      },
+      "floor_act": {
+        "status": "verified",
+        "value": "Enrolled students (CDS): middle-50% ACT Composite 29-33 — middle-50%, NOT a floor. Official admitted-student profile: middle-50% ACT 32-35.",
+        "source": "University of Florida Common Data Set 2024-2025, Section C9; admitted profile from UF Office of Admissions official Student Profile page"
+      },
+      "expected_gpa": {
+        "status": "verified",
+        "value": "Admitted students: middle-50% recalculated core GPA 4.5-4.7 (UF-weighted, core courses only) per UF's official profile. Enrolled students (CDS): average high school GPA 3.92 on a 4.0 scale.",
+        "source": "UF Office of Admissions official Student Profile page (admissions.ufl.edu/freshman-student-profile); average GPA from UF Common Data Set 2024-2025, Section C12"
+      },
+      "annual_fees": {
+        "status": "verified",
+        "value": "2024-2025 tuition + required fees: In-state $6,381; Out-of-state $28,659.",
+        "source": "UF Common Data Set Section G1 and IPEDS/College Scorecard 2024-25 ($6,381 / $28,659); Florida Board of Governors 2024-25 SUS Tuition and Fees Report"
+      },
+      "acceptance_rate": {
+        "status": "verified",
+        "value": "General undergraduate acceptance rate: 19.8% (19,012 admitted of 95,986 applicants, per UF's official Student Profile page). Medical-school acceptance rate for UF pre-med graduates: not published by UF in the sources checked — no figure included.",
+        "source": "UF Office of Admissions official Student Profile page (admissions.ufl.edu/freshman-student-profile)"
+      },
+      "notes": "Top-ranked public flagship with UF Health/Shands clinical access on campus; cost-effective public option for Florida-resident pre-med students. Admitted-profile figures (GPA 4.5-4.7, SAT 1420-1520) run notably higher than enrolled CDS figures, and both are labeled as such."
+    },
+    {
+      "university": "Ohio State University",
+      "college_department": "College of Arts and Sciences (Columbus campus) — home of Ohio State's pre-health/pre-professional advising; pre-medicine is an officially recognized area of interest, not a major, and pre-med students may major in any college (commonly Arts and Sciences sciences such as biology, chemistry, physics).",
+      "state": "Ohio",
+      "city": "Columbus",
+      "program_duration_years": "4",
+      "program_status": "live",
+      "in_state_preference": {
+        "status": "verified",
+        "value": "Public land-grant flagship of Ohio. State residency and geographical residence are 'considered' admissions factors and Ohio residents form the large majority of the Columbus class (about 68-73% of enrolled undergraduates/first-years) and pay resident tuition; however, recent CDS data transcribed from Ohio State's 2025-26 CDS show in-state and out-of-state admit rates were similar (Ohio residents 45.1% vs out-of-state 46.4%, Fall 2025), so there is no large measured admit-rate advantage.",
+        "source": "Ohio State Common Data Set (Columbus), Section C7 residency factors and 2025-26 CDS residency admit figures as transcribed by secondary CDS trackers; Ohio State Statistical Summary 2024-2025 (irp.osu.edu) for resident enrollment and tuition"
+      },
+      "floor_sat": {
+        "status": "verified",
+        "value": "Middle-50% SAT (enrolled): 1310-1480 (Evidence-Based Reading & Writing 640-720; Math 670-760) — middle-50%, NOT a floor.",
+        "source": "IPEDS Admissions survey data for Ohio State University-Main Campus, Fall 2024 (U.S. Dept. of Education College Scorecard / NCES College Navigator figures, as published from IPEDS); Ohio State CDS 2024-2025 Columbus PDF was opened but its C9 numeric cells did not extract as text, so IPEDS is used and named"
+      },
+      "floor_act": {
+        "status": "verified",
+        "value": "Middle-50% ACT Composite (enrolled): 28-32 — middle-50%, NOT a floor.",
+        "source": "IPEDS Admissions survey data for Ohio State University-Main Campus, Fall 2024 (College Scorecard / NCES College Navigator figures, as published from IPEDS)"
+      },
+      "expected_gpa": {
+        "status": "needs_verification",
+        "value": "",
+        "source": "Ohio State does not publish an average high school GPA for enrolled first-years in the sources checked — CDS 2024-2025 Columbus Sections C11/C12 numeric cells did not extract, and College Scorecard/IPEDS do not report a GPA figure for Ohio State; secondary admissions guides likewise state Ohio State does not publish an average GPA."
+      },
+      "annual_fees": {
+        "status": "verified",
+        "value": "2024-2025 tuition + required fees (Columbus, new first-year): In-state $13,244; Out-of-state $40,022.",
+        "source": "Ohio State Statistical Summary 2024-2025 (irp.osu.edu, official), including COTA, activity, recreation and union fees; corroborated by IPEDS/NCES College Navigator 2024-25"
+      },
+      "acceptance_rate": {
+        "status": "verified",
+        "value": "General undergraduate acceptance rate: 60.6% for Fall 2024 entry (44,116 admitted of 72,829 applicants, IPEDS); the more recent 2025-26 CDS cycle is reported at 49.2% (40,047 of 81,392, Columbus). Medical-school acceptance rate for Ohio State pre-med graduates: not published by Ohio State in the sources checked — no figure included.",
+        "source": "IPEDS Admissions 2024-25 for Ohio State-Main Campus; 2025-26 figure from Ohio State Common Data Set 2025-2026 as transcribed by CDS trackers"
+      },
+      "notes": "Large public land-grant flagship with an on-campus academic medical center (Wexner Medical Center / College of Medicine) for research/clinical access. CDS PDF text extraction dropped several numeric cells, so SAT/ACT and acceptance figures are sourced to IPEDS as named, and GPA is honestly left unverified."
+    },
+    {
+      "university": "University of Pittsburgh",
+      "college_department": "Kenneth P. Dietrich School of Arts and Sciences (Pittsburgh campus) — Pitt's liberal arts core, where most pre-med students enroll in any of 50+ majors, supported by the university-wide Pre-Health Resource Center; pre-health students also enroll in other undergraduate schools.",
+      "state": "Pennsylvania",
+      "city": "Pittsburgh",
+      "program_duration_years": "4",
+      "program_status": "live",
+      "in_state_preference": {
+        "status": "verified",
+        "value": "State-related, not state-owned: Pitt is a privately governed university designated a state-related institution of the Commonwealth System of Higher Education in 1966, receiving an annual Pennsylvania appropriation. Pennsylvania residents receive a substantial tuition discount (see annual_fees); no published in-state admissions quota or formal admissions preference was found in Pitt's CDS/admissions sources.",
+        "source": "University of Pittsburgh official About/Staff Handbook pages (hr.pitt.edu, catalog.pitt.edu) on state-related status; tuition differential from Pitt CDS 2024-2025, Section G1"
+      },
+      "floor_sat": {
+        "status": "verified",
+        "value": "Middle-50% SAT by section (enrolled, Fall 2024): Evidence-Based Reading & Writing 640-720 and Math 640-740, i.e. a combined middle-50% of approximately 1280-1460 (Pitt CDS reports sections, not a composite percentile) — middle-50%, NOT a floor. 40% of enrolled first-years submitted SAT.",
+        "source": "University of Pittsburgh Common Data Set 2024-2025 (Pittsburgh Campus), Section C9 (ir.pitt.edu CDS PDF)"
+      },
+      "floor_act": {
+        "status": "verified",
+        "value": "Middle-50% ACT Composite (enrolled, Fall 2024): 29-33 (25th 29, 50th 31, 75th 33) — middle-50%, NOT a floor. 10% submitted ACT.",
+        "source": "University of Pittsburgh Common Data Set 2024-2025 (Pittsburgh Campus), Section C9 (ir.pitt.edu CDS PDF)"
+      },
+      "expected_gpa": {
+        "status": "verified",
+        "value": "Average high school GPA 4.08 (99.4% submitting GPA; Pitt reports weighted GPAs above 4.0); 81% of enrolled first-years had GPA 3.75 or above (61% at 4.0, 20% at 3.75-3.99).",
+        "source": "University of Pittsburgh Common Data Set 2024-2025 (Pittsburgh Campus), Sections C11-C12 (ir.pitt.edu CDS PDF)"
+      },
+      "annual_fees": {
+        "status": "verified",
+        "value": "Tuition + required fees per CDS 2024-2025, Section G1: In-state (Pennsylvania) tuition $20,966 + required fees $1,770 = $22,736; Out-of-state tuition $41,662 + required fees $1,770 = $43,432.",
+        "source": "University of Pittsburgh Common Data Set 2024-2025 (Pittsburgh Campus), Section G1 (ir.pitt.edu CDS PDF)"
+      },
+      "acceptance_rate": {
+        "status": "verified",
+        "value": "General undergraduate acceptance rate: 58.1% (35,372 admitted of 60,898 first-year applicants, Fall 2024). Medical-school acceptance rate for Pitt (Pittsburgh campus) pre-med graduates: no current Pittsburgh-campus rate published by Pitt was found after searching Pitt's Pre-Health Resource Center and Dietrich School pages — no figure included (a 97.8% figure on pitt.edu belongs to the separate Pitt-Johnstown branch campus for 1999-2011 and is NOT used).",
+        "source": "University of Pittsburgh Common Data Set 2024-2025 (Pittsburgh Campus), Section C1 (ir.pitt.edu CDS PDF); pre-health search of prehealth.pitt.edu / Dietrich School pages"
+      },
+      "notes": "State-related AAU research university co-located with UPMC and Pitt School of Medicine, a major pre-med draw with strong research/clinical access. CDS, GPA and score figures verified directly from Pitt's own 2024-2025 CDS, with the branch-campus pre-med rate explicitly excluded."
+    },
+    {
+      "university": "Rice University",
+      "college_department": "Wiess School of Natural Sciences / School of Social Sciences / School of Humanities and other undergraduate schools (no formal pre-med major; students may major in any discipline and complete medical-school prerequisites, with pre-health advising via the Office of Academic Advising)",
+      "state": "Texas",
+      "city": "Houston",
+      "program_duration_years": "4 (also feeds the Rice/Baylor Medical Scholars linkage program — see Dataset 1, Baylor College of Medicine entry)",
+      "program_status": "live",
+      "in_state_preference": {
+        "status": "verified",
+        "value": "No — private institution, no Texas-resident preference in admission",
+        "source": "Rice University Common Data Set 2024-2025, Section A2 (Private nonprofit) and C1 residency breakdown (ideas.rice.edu PDF)"
+      },
+      "floor_sat": {
+        "status": "verified",
+        "value": "1510-1560 (middle-50%, 25th-75th percentile, SAT Composite, enrolled Fall 2024; 48% submitted SAT) — middle-50% range, not a minimum floor",
+        "source": "Rice University Common Data Set 2024-2025, Section C9 (ideas.rice.edu PDF)"
+      },
+      "floor_act": {
+        "status": "verified",
+        "value": "34-35 (middle-50%, 25th-75th percentile, ACT Composite, enrolled Fall 2024; 22% submitted ACT) — middle-50% range, not a minimum floor",
+        "source": "Rice University Common Data Set 2024-2025, Section C9 (ideas.rice.edu PDF)"
+      },
+      "expected_gpa": {
+        "status": "needs_verification",
+        "value": "",
+        "source": "Rice University Common Data Set 2024-2025, Sections C11-C12 report GPA distribution and average GPA as NA / not reported; C10 reports 89% in top tenth of high school class. No average GPA published in the CDS opened."
+      },
+      "annual_fees": {
+        "status": "verified",
+        "value": "2025-2026 (as reported in CDS 2024-2025, Section G1): first-year tuition $66,540 + required fees $957 = $67,497 tuition and required fees (continuing undergraduates tuition listed as $62,474 + $957 fees)",
+        "source": "Rice University Common Data Set 2024-2025, Section G1 (ideas.rice.edu PDF)"
+      },
+      "acceptance_rate": {
+        "status": "verified",
+        "value": "General undergraduate: 8.0% (2,597 admitted of 32,473 applicants, Fall 2024). Medical-school acceptance for Rice pre-meds: no percentage was found on Rice's official Office of Academic Advising / pre-health pages searched (oaa.rice.edu, naturalsciences.rice.edu); secondary sources claim 80-90% but that figure was not verified from a Rice primary source in this research.",
+        "source": "General rate: Rice University Common Data Set 2024-2025, Section C1. Pre-health structure: Rice Office of Academic Advising Pre-Med/Pre-Dent page and Wiess School of Natural Sciences Pre-Health Professions page (rice.edu)"
+      },
+      "notes": "Rice sits directly across from the Texas Medical Center in Houston, the world's largest medical complex, giving pre-meds unusually close clinical, volunteer and research access. The Office of Academic Advising provides specialized pre-health advising and a committee-letter (Open File) process. Overlaps with Dataset 1 via the Rice/Baylor Medical Scholars linkage with Baylor College of Medicine (a separate Houston institution); Compass should present both angles without duplicating. Do not present a Rice-published medical-school acceptance rate without a primary Rice page stating it — none was located in this search."
+    },
+    {
+      "university": "Georgetown University",
+      "college_department": "Georgetown College of Arts & Sciences — the primary home of pre-health studies (Pre-Health Advising Office is housed in the College); per Georgetown's Pre-Health Studies site, pre-health students may major in programs in the College of Arts & Sciences, the School of Health, the McDonough School of Business, and the Walsh School of Foreign Service.",
+      "state": "District of Columbia",
+      "city": "Washington",
+      "program_duration_years": "4",
+      "program_status": "live",
+      "in_state_preference": {
+        "status": "verified",
+        "value": "No — private institution (private nonprofit, Jesuit) in Washington, DC. No in-state tuition rate and no District/state-resident admissions preference.",
+        "source": "Georgetown University Common Data Set 2024-25, Section A (Institutional Control: Private nonprofit), via Georgetown OADS Common Data Set (oads.georgetown.edu/commondataset); Georgetown Key Facts page (georgetown.edu)"
+      },
+      "floor_sat": {
+        "status": "verified",
+        "value": "Middle-50% SAT Composite (enrolled): 1400-1540 for the 2024-25 CDS cycle (50th percentile 1490) — middle-50%, NOT a floor. Georgetown requires SAT or ACT scores.",
+        "source": "Georgetown University Common Data Set 2024-25, Section C9, as compiled by College Transitions from Georgetown's CDS (Georgetown's CDS is published by its Office of Assessment and Decision Support, oads.georgetown.edu/commondataset)"
+      },
+      "floor_act": {
+        "status": "verified",
+        "value": "Middle-50% ACT Composite (enrolled): 31-35 for the 2024-25 CDS cycle (50th percentile 33) — middle-50%, NOT a floor.",
+        "source": "Georgetown University Common Data Set 2024-25, Section C9, as compiled by College Transitions from Georgetown's CDS"
+      },
+      "expected_gpa": {
+        "status": "needs_verification",
+        "value": "",
+        "source": "Georgetown does not publish high school GPA data (average GPA or GPA distribution) in its Common Data Set — confirmed by multiple guides citing Georgetown's CDS ('Georgetown doesn't publish GPA data in its Common Data Set'); it reports class rank instead (about 85-87% of enrolled students in the top tenth of their class). No GPA figure is therefore given."
+      },
+      "annual_fees": {
+        "status": "verified",
+        "value": "2024-2025: Tuition $67,824 + required fees $192 = $68,016 tuition + required fees. Private — same rate for all students. (Georgetown's Key Facts page lists undergraduate tuition alone at $71,136 for FY2026.)",
+        "source": "Georgetown University Common Data Set Section G1 figures compiled by College Transitions from Georgetown CDS (2024-25: tuition $67,824, required fees $192); tuition-only FY2026 figure from Georgetown Key Facts (georgetown.edu)"
+      },
+      "acceptance_rate": {
+        "status": "verified",
+        "value": "General undergraduate acceptance rate: 12.9% (3,374 admitted of 26,131 applicants, Fall 2024 CDS cycle; Fall 2025: 13.5%, 3,618 of 26,822 per Georgetown Key Facts). PLUS medical-school acceptance rate for Georgetown pre-health graduates: 75-88% overall acceptance rate for Georgetown students applying to medical school (95-160 applicants per year), published by Georgetown's own Pre-Health Studies office.",
+        "source": "Georgetown Common Data Set admit figures compiled from Georgetown CDS series and Georgetown Key Facts (georgetown.edu); pre-health rate from Georgetown Pre-Health Studies official FAQ (premed.georgetown.edu)"
+      },
+      "notes": "Highly selective private Jesuit university; test-required, with a structured Pre-Health Recommendation Committee and an Early Assurance Program to Georgetown School of Medicine, and proximity to MedStar hospital system. It is one of the few schools that itself publishes a pre-med medical-school acceptance range (75-88%), and it does not publish GPA data."
+    },
+    {
+      "university": "The University of Texas at Austin",
+      "college_department": "College of Natural Sciences (primary home for pre-meds) / any college via the transcripted Pre-Health Professions Certificate (pre-med is not a major; Health Professions Office is housed in the College of Natural Sciences)",
+      "state": "Texas",
+      "city": "Austin",
+      "program_duration_years": "4",
+      "program_status": "live",
+      "in_state_preference": {
+        "status": "verified",
+        "value": "Yes — public institution with strong Texas-resident preference. Under state law 90% of first-year students must be Texas residents and, of those, 75% must be automatically admitted; UT Austin set automatic admission at the top 6% of a Texas high school class for Fall 2023/Fall 2024 applicants; the threshold for the currently announced cycles is the top 5% (verified on UT Austin's official admissions page, 2026-11-19). The threshold is set annually, so reconfirm it for the student's own cycle.",
+        "source": "UT News (utexas.edu), 'Automatic Admissions Threshold Remains at 6% for UT Austin' (Sept. 21, 2021), stating the 90% in-state and 75% automatic-admission law; Texas Education Code Sec. 51.803 context"
+      },
+      "floor_sat": {
+        "status": "verified",
+        "value": "1250-1510 (middle-50%, 25th-75th percentile, SAT Composite, enrolled students, IPEDS Fall 2024). UT Austin's own CDS score table (C9) is left blank / not reported, so the federal IPEDS figure is used and labeled as such.",
+        "source": "IPEDS 2025 survey for academic year 2024/2025 as compiled from UT Austin reporting (SAT 1250-1510, 56% submitted); UT Austin Common Data Set via reports.utexas.edu"
+      },
+      "floor_act": {
+        "status": "verified",
+        "value": "27-33 (middle-50%, 25th-75th percentile, ACT Composite, enrolled students, IPEDS Fall 2024)",
+        "source": "IPEDS / College Scorecard fall 2024 data for UT Austin; UT Austin CDS C9 itself does not publish a score range"
+      },
+      "expected_gpa": {
+        "status": "needs_verification",
+        "value": "",
+        "source": "UT Austin does not publish an average high school GPA in its Common Data Set C11/C12 in the sources opened; secondary compilations estimate about 3.83 but that is not a UT-published figure and is not presented as verified. Class rank is the operative UT metric (automatic admission by top percent)."
+      },
+      "annual_fees": {
+        "status": "verified",
+        "value": "2024-2025: tuition and fees $11,688 in-state / $44,908 out-of-state",
+        "source": "IPEDS / NCES College Navigator and College Scorecard 2024-2025 for UT Austin"
+      },
+      "acceptance_rate": {
+        "status": "verified",
+        "value": "General undergraduate: 26.6% (19,417 admitted of 72,885 applicants, Fall 2024). Medical-school matriculation for UT Austin graduates (Health Professions Office EY2023 report): 636 applied through TMDSAS, 371 matriculated through TMDSAS (58%), and 427 matriculated to a medical school in total (67%).",
+        "source": "General rate: University of Texas at Austin Common Data Set 2024-2025, Section C1. Medical rate: UT Austin Health Professions Office (healthprofessions.utexas.edu), Pre-Medical Pathway page and EY 2023 Medical School Admission Report (TMDSAS data)"
+      },
+      "notes": "Basis: UT Austin's College of Natural Sciences Health Professions Office provides dedicated Health Professions Coaches, a Pre-Health Professions Certificate open to majors in any college, and published pathway statistics by application service. It is one of the largest medical-school feeder programs in the state, with access to Dell Medical School and extensive undergraduate research in Austin. SAT/ACT are middle-50% ranges, not floors. The automatic-admission percent has since been reported as top 5% for Fall 2026/2027 in secondary reports — verify the current year's threshold on admissions.utexas.edu before use."
+    },
+    {
+      "university": "Texas A&M University",
+      "college_department": "No pre-medical major or track — students enroll in any college/major (commonly College of Arts and Sciences / College of Science programs such as Biology, Biomedical Sciences, Chemistry, Biochemistry) and complete prerequisites, with advising via Professional School Advising (OPSA) in the Career Center",
+      "state": "Texas",
+      "city": "College Station",
+      "program_duration_years": "4",
+      "program_status": "live",
+      "in_state_preference": {
+        "status": "verified",
+        "value": "Yes — public institution; Texas residents benefit from the Texas Top 10% automatic-admission law for public universities and from in-state tuition. Texas A&M continues under the original Top 10% framework (unlike UT Austin's lower capped percent).",
+        "source": "Texas Education Code automatic-admission framework as described for Texas public universities; Texas A&M Career Center / OPSA pages (careercenter.tamu.edu)"
+      },
+      "floor_sat": {
+        "status": "verified",
+        "value": "1160-1390 (middle-50%, 25th-75th percentile, SAT Composite, enrolled first-years, most recent CDS reporting for Fall 2025 entering class; IPEDS Fall 2024 range was 1150-1400) — middle-50% range, not a floor",
+        "source": "Texas A&M University Common Data Set as extracted by collegedata.fyi (CDS 2025-26: SAT 1160-1390, 77% submitted); IPEDS Fall 2024 cross-check 1150-1400"
+      },
+      "floor_act": {
+        "status": "verified",
+        "value": "24-32 (middle-50%, 25th-75th percentile, ACT Composite, enrolled first-years, most recent CDS reporting for Fall 2025 entering class; IPEDS Fall 2024 range was 25-31) — middle-50% range, not a floor",
+        "source": "Texas A&M University Common Data Set as extracted by collegedata.fyi (CDS 2025-26: ACT 24-32); IPEDS Fall 2024 cross-check 25-31"
+      },
+      "expected_gpa": {
+        "status": "needs_verification",
+        "value": "",
+        "source": "No average high school GPA was confirmed on a Texas A&M official (tamu.edu) page in this search; one CDS-based secondary compilation reports a 3.78 average and 66% in the top tenth, while an IPEDS-based source states Texas A&M has not published an average GPA for enrolled freshmen. Because of that conflict, no GPA is presented as verified."
+      },
+      "annual_fees": {
+        "status": "verified",
+        "value": "2025-2026: tuition and fees $13,154 in-state / $40,124 out-of-state (College Scorecard published tuition; some Scorecard releases list out-of-state tuition and fees as $39,974)",
+        "source": "U.S. Department of Education College Scorecard / IPEDS 2025-2026 for Texas A&M University-College Station; Texas A&M System news (tamus.edu) confirming a tuition/fee freeze for Texas residents for 2025-26 and 2026-27"
+      },
+      "acceptance_rate": {
+        "status": "verified",
+        "value": "General undergraduate: 51.7% in the most recent CDS-based reporting (32,531 admitted of 62,967 applicants, Fall 2025 entering class); IPEDS Fall 2024 rate was 57.4%. Medical-school acceptance for Texas A&M pre-meds: no rate was published on the OPSA / Career Center medical-school page found in this search.",
+        "source": "General CDS rate: Texas A&M Common Data Set compilation (collegedata.fyi / CDS-based analysis). IPEDS cross-check: College Scorecard Fall 2024, 57.4%. Pre-med advising: Texas A&M Career Center, Professional School Advising — Medical School page (careercenter.tamu.edu)"
+      },
+      "notes": "Basis: Professional School Advising in the Career Center advises pre-meds from freshman year, manages the OPSA portal/file and evaluation process for TMDSAS applications, and stresses prerequisites, shadowing (a goal of at least 200 hours cited on its page) and letters. Texas A&M also houses its own medical school (Naresh K. Vashisht College of Medicine in Bryan/College Station) and early-assurance pathways, alongside very large undergraduate research programs. Texas A&M's official CDS PDF was not directly opened from a tamu.edu host in this search; CDS figures above are from a CDS extraction service and are labeled as such, cross-checked against IPEDS."
+    },
+    {
+      "university": "The University of Texas at Dallas",
+      "college_department": "School of Natural Sciences and Mathematics (Biology, Molecular Biology, Biochemistry, Chemistry, Biomedical Sciences) and School of Behavioral and Brain Sciences (Neuroscience, Psychology, Cognitive Science) — pre-health is available within any major, advised by the Health Professions Advising Center (HPAC)",
+      "state": "Texas",
+      "city": "Richardson",
+      "program_duration_years": "4",
+      "program_status": "live",
+      "in_state_preference": {
+        "status": "verified",
+        "value": "Yes — public institution; Texas-resident preference under the Texas Top 10% automatic-admission law and in-state tuition. CDS Fall 2024 residency breakdown: 24,462 in-state applicants of 31,789 total, 16,907 in-state admits of 20,704 total.",
+        "source": "UT Dallas Common Data Set 2024-2025, Sections A2 (Public) and C1 residency breakdown (dox.utdallas.edu PDF)"
+      },
+      "floor_sat": {
+        "status": "verified",
+        "value": "1170-1390 (middle-50%, 25th-75th percentile, SAT Composite, enrolled Fall 2024; 78% submitted SAT, median 1280) — middle-50% range, not a floor",
+        "source": "UT Dallas Common Data Set 2024-2025, Section C9 (dox.utdallas.edu PDF)"
+      },
+      "floor_act": {
+        "status": "verified",
+        "value": "24-32 (middle-50%, 25th-75th percentile, ACT Composite, enrolled Fall 2024; 13% submitted ACT, median 28) — middle-50% range, not a floor",
+        "source": "UT Dallas Common Data Set 2024-2025, Section C9 (dox.utdallas.edu PDF)"
+      },
+      "expected_gpa": {
+        "status": "needs_verification",
+        "value": "",
+        "source": "UT Dallas Common Data Set 2024-2025, Sections C11-C12 report GPA distribution and average GPA as 0.00% / 0.00 (not reported). C10 reports 39.95% in the top tenth and 69.93% in the top quarter of their high school class. No average GPA is published in the CDS."
+      },
+      "annual_fees": {
+        "status": "verified",
+        "value": "2025-2026 (as reported in CDS 2024-2025, Section G1): in-state tuition $10,639 + required fees $4,015 = $14,654 tuition and required fees; out-of-state tuition $36,139 + required fees $4,015 = $40,154",
+        "source": "UT Dallas Common Data Set 2024-2025, Section G1 (dox.utdallas.edu PDF)"
+      },
+      "acceptance_rate": {
+        "status": "verified",
+        "value": "General undergraduate: 65.1% (20,704 admitted of 31,789 applicants, Fall 2024). Medical-school admission for UT Dallas pre-meds (Entry Year 2025, HPAC-published): 495 medical applicants in total; 82% admission rate for the 202 who completed HPAC Applicant Support, versus 45% for the 148 who used no HPAC Applicant Support.",
+        "source": "General rate: UT Dallas Common Data Set 2024-2025, Section C1. Medical rate: UT Dallas Health Professions Advising Center (pre-health.utdallas.edu), Success Rates page (Entry Year 2025) and UT Dallas News Center"
+      },
+      "notes": "Basis: UT Dallas HPAC states, citing AAMC data, that UT Dallas is the #15 medical feeder school in America and #3 in Texas, with six full-time advisors, committee ratings and applicant support that its own data associate with much higher placement. The Green Fellows program places undergraduates in full-time spring research at UT Southwestern Medical Center in Dallas, giving direct UTSW research and clinical-network access. HPAC medical figures are for the HPAC-defined applicant groups above, not for all UT Dallas graduates — label them exactly as HPAC does."
+    },
+    {
+      "university": "Baylor University",
+      "college_department": "College of Arts & Sciences — Office of Prehealth Studies (Baylor Sciences Building) for Pre-Medical/Pre-Dental and other prehealth designations, open to students in any major; also Health Science Studies pre-medical track in the Robbins College of Health and Human Sciences",
+      "state": "Texas",
+      "city": "Waco",
+      "program_duration_years": "4",
+      "program_status": "live",
+      "in_state_preference": {
+        "status": "verified",
+        "value": "No — private institution, no Texas-resident preference in admission (tuition is the same for in-state and out-of-state students)",
+        "source": "IPEDS Institutional Characteristics 2024-2025 (in-state and out-of-state tuition both $58,100); Baylor Common Data Set (ir.web.baylor.edu)"
+      },
+      "floor_sat": {
+        "status": "verified",
+        "value": "1160-1340 (middle-50%, 25th-75th percentile, SAT Composite, enrolled first-years, CDS 2024-2025; 44% submitted SAT, median 1250). IPEDS Fall 2024 reports a wider 1200-1400 range on a different cohort definition — see notes.",
+        "source": "Baylor University Common Data Set 2024-2025 as extracted by collegedata.fyi (CDS Section C9); Baylor CDS hosted at ir.web.baylor.edu"
+      },
+      "floor_act": {
+        "status": "verified",
+        "value": "25-31 (middle-50%, 25th-75th percentile, ACT Composite, enrolled first-years, CDS 2024-2025; 23% submitted ACT, median 28)",
+        "source": "Baylor University Common Data Set 2024-2025 as extracted by collegedata.fyi (CDS Section C9); Baylor CDS hosted at ir.web.baylor.edu"
+      },
+      "expected_gpa": {
+        "status": "needs_verification",
+        "value": "",
+        "source": "Baylor's official CDS PDF (2025-2026, ir.web.baylor.edu) could not be opened directly in this research due to a browser rate limit, so its C11/C12 GPA figures were not verified from the primary document. Secondary IPEDS/CDS compilations report averages ranging from about 3.64 (most recent CDS, unweighted) to 3.74 — that range is noted here honestly and not presented as verified."
+      },
+      "annual_fees": {
+        "status": "verified",
+        "value": "2024-2025: tuition and fees $58,100 (tuition $58,100, required fees $0 separately listed in IPEDS), same for in-state and out-of-state students as a private institution",
+        "source": "IPEDS Cost survey 2024-2025 for Baylor University (COST1_2024), via NCES College Navigator / College Scorecard compilations"
+      },
+      "acceptance_rate": {
+        "status": "verified",
+        "value": "General undergraduate: 51.3% (24,075 admitted of 46,946 applicants, CDS 2024-2025). Medical-school acceptance for Baylor pre-health graduates: Baylor itself reports a 75% acceptance rate to medical school for graduating seniors in its Pre-Professional Programs description.",
+        "source": "General rate: Baylor University Common Data Set 2024-2025, Section C1 as extracted by collegedata.fyi. Medical rate: Baylor University news (bn.web.baylor.edu), 'Ten New & Unique-to-Baylor Majors and Programs' — Pre-Professional Programs: 75% to medical school for graduating seniors"
+      },
+      "notes": "Basis: Baylor's Office of Prehealth Studies in the College of Arts & Sciences advises roughly 4,000 prehealth students, runs Medical Humanities and the Hillis Scholars biomedical program, and requires a 3.0 GPA to maintain the prehealth designation. Its Baylor2Baylor Medical Program is a joint 8-year program with Baylor College of Medicine in Houston — a separate, independent institution from Baylor University in Waco — granting provisional admission to a small cohort (6 students per year in recent published descriptions). Baylor University (Waco, undergraduate) and Baylor College of Medicine (Houston, medical school) are separate institutions that share a name and the Baylor2Baylor partnership only — do not attribute BCM's medical-school statistics to Baylor University. Baylor's 75% medical figure is as Baylor published it for graduating seniors; the cohort year and denominator are not specified on that page."
+    },
+    {
+      "university": "University of Houston",
+      "college_department": "College of Natural Sciences and Mathematics (most pre-med majors); The Honors College — Honors Biomedical Sciences major, housed in the College of Natural Sciences and Mathematics",
+      "state": "Texas",
+      "city": "Houston",
+      "program_duration_years": "4",
+      "program_status": "live",
+      "in_state_preference": {
+        "status": "verified",
+        "value": "Yes — Texas public institution; Texas residents pay the in-state tuition rate and non-residents pay a substantially higher out-of-state rate (see annual_fees).",
+        "source": "University of Houston Common Data Set 2024-2025, Section A2 (public control); UH About page (uh.edu) tuition differential"
+      },
+      "floor_sat": {
+        "status": "verified",
+        "value": "Middle-50% SAT composite (not a floor): 1170-1330; median 1240. SAT Evidence-Based Reading and Writing middle-50% 590-670, Math 570-670. 50% of enrolled first-years submitted SAT scores.",
+        "source": "University of Houston Common Data Set 2024-2025, Section C9, as transcribed on collegedata.fyi (UH CDS 2024-2025)"
+      },
+      "floor_act": {
+        "status": "verified",
+        "value": "Middle-50% ACT composite (not a floor): 23-29; median 26. About 10% of enrolled first-years submitted ACT scores (389 students).",
+        "source": "University of Houston Common Data Set 2024-2025, Section C9, as transcribed on collegedata.fyi (UH CDS 2024-2025)"
+      },
+      "expected_gpa": {
+        "status": "needs_verification",
+        "value": "",
+        "source": "Secondary summaries citing University of Houston Common Data Set 2024-2025, Section C12 report an average high school GPA of 3.49 for enrolled first-years (98% reporting), but the primary UH CDS PDF text for Section C12 was not directly opened in this research, so no value is carried as verified."
+      },
+      "annual_fees": {
+        "status": "verified",
+        "value": "2024-2025 tuition and fees (combined, IPEDS): $9,717 in-state (Texas resident); $22,547 out-of-state. UH tuition varies by college and by fixed-rate plan, and UH's own About page lists a higher approximate figure for 2026-2027 (about $11,888 in-state / $27,776 out-of-state) — see notes.",
+        "source": "IPEDS / U.S. Department of Education College Scorecard 2024-2025 tuition and fees for University of Houston; UH About page (uh.edu) for the 2026-2027 estimate"
+      },
+      "acceptance_rate": {
+        "status": "verified",
+        "value": "General undergraduate acceptance rate: 73.9% (23,446 admitted of 31,716 applicants, Fall 2024). Medical-school acceptance rate for UH pre-med graduates: not published by the university in a source found in this research — no figure included for that sub-figure.",
+        "source": "University of Houston Common Data Set 2024-2025, Section C1, as transcribed on collegedata.fyi (UH CDS 2024-2025)"
+      },
+      "notes": "Basis: UH's Honors Biomedical Sciences program, created in partnership with UT McGovern Medical School and UT Medical Branch Galveston and housed in the College of Natural Sciences and Mathematics with a built-in Medicine & Society minor, is a documented pre-health pathway (uh.edu Honors College page). UH's Houston location near the Texas Medical Center gives pre-med students access to a large concentration of hospitals and research institutes for shadowing, volunteering and research. UH CDS G1 transcription was garbled for tuition lines, so annual_fees uses the IPEDS 2024-2025 tuition-and-fees figure; UH charges differ by college and by the UH in 4 fixed-rate plan. Texas Education Code §51.803 automatic admission applies at UH as it does at the other Texas public universities in this dataset: a Texas applicant in the top 10% of their high school class is automatically admitted to the university (not to a specific college or major)."
+    },
+    {
+      "university": "Stanford University",
+      "college_department": "Undergraduates enroll in one of three undergraduate schools: School of Humanities and Sciences, School of Engineering, and Doerr School of Sustainability; pre-med students are most commonly in Humanities and Sciences (e.g., Human Biology, Biology, Chemistry). There is no pre-med major.",
+      "state": "California",
+      "city": "Stanford",
+      "program_duration_years": "4",
+      "program_status": "live",
+      "in_state_preference": {
+        "status": "verified",
+        "value": "No — private institution; no in-state / out-of-state tuition differential and no state-resident admission preference.",
+        "source": "Stanford University Common Data Set 2024-2025, Section A2 (private nonprofit control); CDS Section G lists a single private tuition rate"
+      },
+      "floor_sat": {
+        "status": "verified",
+        "value": "Middle-50% SAT composite (not a floor): 1510-1570; median 1540. Evidence-Based Reading and Writing 740-780, Math 770-800. 50.3% of enrolled first-years submitted SAT scores.",
+        "source": "Stanford University Common Data Set 2024-2025, Section C9"
+      },
+      "floor_act": {
+        "status": "verified",
+        "value": "Middle-50% ACT composite (not a floor): 34-35; median 35. 19.0% of enrolled first-years submitted ACT scores.",
+        "source": "Stanford University Common Data Set 2024-2025, Section C9"
+      },
+      "expected_gpa": {
+        "status": "verified",
+        "value": "Average high school GPA 3.94 (Section C12); 73.3% of enrolled first-years who submitted GPA had a 4.0 and 16.5% had 3.75-3.99 (Section C11); 68.1% submitted GPA.",
+        "source": "Stanford University Common Data Set 2024-2025, Sections C11-C12"
+      },
+      "annual_fees": {
+        "status": "verified",
+        "value": "2025-2026 (costs listed in the 2024-2025 CDS, Section G1): tuition $67,731 + required fees $813 = $68,544 tuition and required fees.",
+        "source": "Stanford University Common Data Set 2024-2025, Section G1; Stanford News, 'Trustees set 2024-25 tuition' (news.stanford.edu) for the prior-year comparison"
+      },
+      "acceptance_rate": {
+        "status": "verified",
+        "value": "General undergraduate acceptance rate: 3.6% (2,067 admitted of 57,326 applicants, Fall 2024). Medical-school acceptance rate for Stanford pre-med graduates: not published by Stanford in a source found in this research — no figure included for that sub-figure; third-party claims of such a rate were not used.",
+        "source": "Stanford University Common Data Set 2024-2025, Section C1"
+      },
+      "notes": "Basis: Stanford's Program in Human Biology states that many students pursuing medicine graduate from Human Biology, an interdisciplinary undergraduate major in the School of Humanities and Sciences (humanbiology.stanford.edu). Pre-med students study on the same campus as Stanford School of Medicine and its affiliated hospitals, with pre-professional advising for students planning to attend medical school. Stanford reinstated an SAT/ACT requirement beginning with the 2025-2026 application cycle (Fall 2026 entry), per CDS Section C8F."
+    },
+    {
+      "university": "Harvard University",
+      "college_department": "Harvard College (the sole undergraduate college, within the Faculty of Arts and Sciences). There is no pre-med concentration; any concentration can fulfill premedical requirements.",
+      "state": "Massachusetts",
+      "city": "Cambridge",
+      "program_duration_years": "4",
+      "program_status": "live",
+      "in_state_preference": {
+        "status": "verified",
+        "value": "No — private institution; no in-state / out-of-state tuition differential and no Massachusetts-resident admission preference.",
+        "source": "Harvard University Common Data Set 2024-2025, Section A2: 'Private (nonprofit)' (OIRA PDF); CDS Section G1 lists a single private tuition rate"
+      },
+      "floor_sat": {
+        "status": "verified",
+        "value": "Middle-50% SAT by section (not a floor); Harvard does NOT report an SAT composite range in its CDS. SAT Evidence-Based Reading and Writing: 740-780 (median 760); SAT Math: 770-800 (median 790). 54% of enrolled first-years submitted SAT scores. A composite of 1510-1580 can be derived by adding section percentiles but is not an official Harvard figure.",
+        "source": "Harvard University Common Data Set 2024-2025, Section C9 (OIRA PDF, oira.harvard.edu)"
+      },
+      "floor_act": {
+        "status": "verified",
+        "value": "Middle-50% ACT composite (not a floor): 34-36; median 35. 19% of enrolled first-years submitted ACT scores.",
+        "source": "Harvard University Common Data Set 2024-2025, Section C9 (OIRA PDF)"
+      },
+      "expected_gpa": {
+        "status": "verified",
+        "value": "Average high school GPA 4.21 (Section C12, 99.21% of first-years submitted GPA); distribution (Section C11): 72.41% had GPA of 4.0, 22.20% had 3.75-3.99, 4.11% had 3.50-3.74. The 4.21 average exceeds 4.0 as reported by Harvard in its CDS.",
+        "source": "Harvard University Common Data Set 2024-2025, Sections C11-C12 (OIRA PDF)"
+      },
+      "annual_fees": {
+        "status": "verified",
+        "value": "2025-2026 (costs listed in the 2024-2025 CDS, Section G1): tuition $59,320 + required fees $5,476 = $64,796 tuition and required fees (food and housing on campus was an additional $22,130).",
+        "source": "Harvard University Common Data Set 2024-2025, Section G1 (OIRA PDF)"
+      },
+      "acceptance_rate": {
+        "status": "verified",
+        "value": "General undergraduate acceptance rate: 3.6% (1,970 admitted of 54,008 applicants, Fall 2024). Medical-school admission rate for Harvard applicants (published by Harvard itself): 'In a typical year, the admissions rate for Harvard applicants is in the range of 80 to 90 percent' — Mignone Center for Career Success, 'Applying to Medical School'.",
+        "source": "Harvard University Common Data Set 2024-2025, Section C1 (OIRA PDF); Harvard Mignone Center for Career Success, 'Applying to Medical School' (careerservices.fas.harvard.edu)"
+      },
+      "notes": "Basis: Harvard College states there is no pre-med concentration and that comparable humanities and science students do not have different medical-school acceptance rates (college.harvard.edu pre-med FAQ). Documented support includes Mignone Center for Career Success premedical advising, House premedical tutors and a Premedical Committee that writes the Harvard College committee letter, alongside Harvard Medical School-affiliated hospitals. Harvard's CDS leaves the SAT composite row blank, so no official composite middle-50% exists; only the section ranges above are verified. The 80-90% medical-school figure is Harvard's own published range for its applicants in a typical year, not an independently audited matriculation rate."
+    },
+    {
+      "university": "Case Western Reserve University",
+      "college_department": "Single-door admission to four undergraduate schools: College of Arts and Sciences, Case School of Engineering, Frances Payne Bolton School of Nursing, and Weatherhead School of Management; pre-med students enroll mainly in the College of Arts and Sciences (and Engineering for biomedical engineering), with access to the entire catalog across schools after admission.",
+      "state": "Ohio",
+      "city": "Cleveland",
+      "program_duration_years": "4",
+      "program_status": "live",
+      "in_state_preference": {
+        "status": "verified",
+        "value": "No — private institution; no in-state / out-of-state tuition differential and no Ohio-resident admission preference.",
+        "source": "Case Western Reserve University Common Data Set 2024-2025, Section A2: 'Private (nonprofit)'; CDS Section G1 lists a single private tuition rate"
+      },
+      "floor_sat": {
+        "status": "verified",
+        "value": "Middle-50% SAT composite (not a floor): 1450-1530; median 1500. Evidence-Based Reading and Writing 700-760, Math 740-790. 46% of enrolled first-years submitted SAT scores. CWRU's own First-Year Student Profile 2025 reports a similar middle-50% of 1440-1530.",
+        "source": "Case Western Reserve University Common Data Set 2024-2025, Section C9; Case Western Reserve University First-Year Student Profile 2025 (case.edu)"
+      },
+      "floor_act": {
+        "status": "verified",
+        "value": "Middle-50% ACT composite (not a floor): 32-35; median 34. 23% of enrolled first-years submitted ACT scores.",
+        "source": "Case Western Reserve University Common Data Set 2024-2025, Section C9"
+      },
+      "expected_gpa": {
+        "status": "verified",
+        "value": "Average high school GPA 3.78 (Section C12; 91.23% of first-years submitted GPA). Distribution (Section C11, all enrolled): 17.89% had GPA of 4.0, 46.82% had 3.75-3.99, 24.32% had 3.50-3.74.",
+        "source": "Case Western Reserve University Common Data Set 2024-2025, Sections C11-C12"
+      },
+      "annual_fees": {
+        "status": "verified",
+        "value": "2025-2026 (costs listed in the 2024-2025 CDS, Section G1): tuition $68,660 + required fees $1,340 = $70,000 tuition and required fees (food and housing on campus was an additional $19,514). Note CDS Section G4 indicates tuition and fees vary by undergraduate instructional program.",
+        "source": "Case Western Reserve University Common Data Set 2024-2025, Section G1"
+      },
+      "acceptance_rate": {
+        "status": "verified",
+        "value": "General undergraduate acceptance rate: 35% in the most recent official profile (13,878 admitted of 39,320 applications, First-Year Student Profile 2025); the 2024 profile reported 37% (13,550 of 37,082). Medical-school acceptance rate for CWRU graduates (published by CWRU itself): recent graduates had an 81% acceptance rate for medical school (MD and DO), versus a national average of 47% cited by CWRU; CWRU's separate MD-cycle assessment reported a 68% overall acceptance rate for CWRU applicants in the 2023-2024 MD cycle.",
+        "source": "Case Western Reserve University First-Year Student Profile 2025 and 2024 (case.edu/ir); CWRU Undergraduate Admission feature, 'CWRU pre-med students are set up to stand out' (case.edu); CWRU 'Med School Assessment for Chemistry' institutional report (case.edu/ir)"
+      },
+      "notes": "Basis: CWRU publishes pre-med outcomes itself: recent graduates had an 81% MD/DO medical-school acceptance rate, with Healthcare Careers advising and a letter of evaluation (case.edu). The university sits in Cleveland's University Circle adjacent to University Hospitals Cleveland Medical Center and near Cleveland Clinic, giving undergraduates clinical and research access, and it offers the Pre-Professional Scholars Program with conditional admission to its School of Medicine. The 81% figure is CWRU's headline figure for recent graduates (MD and DO combined) on its admission site; its institutional MD-cycle assessment gives a lower 68% for the 2023-2024 MD-only cycle — both are CWRU-published and are labeled separately rather than merged."
+    },
+    {
+      "university": "University of Rochester",
+      "college_department": "Arts, Sciences and Engineering — the School of Arts & Sciences and the Hajim School of Engineering & Applied Sciences (pre-med students enroll in Arts & Sciences or Hajim; the Eastman School of Music is the other undergraduate school).",
+      "state": "New York",
+      "city": "Rochester",
+      "program_duration_years": "4",
+      "program_status": "live",
+      "in_state_preference": {
+        "status": "verified",
+        "value": "No — private institution; no in-state / out-of-state tuition differential and no New York-resident admission preference.",
+        "source": "University of Rochester Common Data Set 2024-2025, Section A2: 'Private (nonprofit)' (rochester.edu CDS PDF); CDS Section G1 lists a single private tuition rate"
+      },
+      "floor_sat": {
+        "status": "verified",
+        "value": "Middle-50% SAT composite (not a floor): 1420-1500; median 1470. Evidence-Based Reading and Writing 680-750, Math 730-790. Reported for Arts, Sciences & Engineering only; 19% of enrolled first-years submitted SAT scores.",
+        "source": "University of Rochester Common Data Set 2024-2025, Section C9 (rochester.edu CDS PDF)"
+      },
+      "floor_act": {
+        "status": "verified",
+        "value": "Middle-50% ACT composite (not a floor): 32-34; median 33. Reported for Arts, Sciences & Engineering only; 6% of enrolled first-years submitted ACT scores.",
+        "source": "University of Rochester Common Data Set 2024-2025, Section C9 (rochester.edu CDS PDF)"
+      },
+      "expected_gpa": {
+        "status": "verified",
+        "value": "Average high school GPA 3.72 (Section C12; 99.8% of first-years submitted GPA). Distribution (Section C11): 21.75% had GPA of 4.0, 33.31% had 3.75-3.99, 24.38% had 3.50-3.74.",
+        "source": "University of Rochester Common Data Set 2024-2025, Sections C11-C12 (rochester.edu CDS PDF)"
+      },
+      "annual_fees": {
+        "status": "verified",
+        "value": "2025-2026 (costs listed in the 2024-2025 CDS, Section G1): tuition $69,030 + required fees $1,254 = $70,284 tuition and required fees (estimated food and housing on campus was an additional $20,698). The CDS notes these 2025-2026 figures were estimated as of March 2025.",
+        "source": "University of Rochester Common Data Set 2024-2025, Section G1 (rochester.edu CDS PDF)"
+      },
+      "acceptance_rate": {
+        "status": "verified",
+        "value": "General undergraduate acceptance rate: 40.1% (8,570 admitted of 21,384 applicants, Fall 2024 — Arts, Sciences & Engineering 8,150 of 20,307 plus Eastman School of Music 420 of 1,077, CDS Section C1). Medical-school acceptance rate for Rochester pre-med graduates (published by Rochester itself): over the last three application cycles, students who used the Greene Center's health committee process had a 72% acceptance rate to MD and DO programs.",
+        "source": "University of Rochester Common Data Set 2024-2025, Section C1 (rochester.edu CDS PDF); University of Rochester Greene Center for Career Education and Connections, Career Outcomes page, 'Medical School Acceptance Information' (careereducation.rochester.edu/outcomes)"
+      },
+      "notes": "Basis: Rochester publishes pre-med outcomes through its Greene Center (72% MD/DO acceptance over three cycles for committee-process students, admitted to over 90 different medical schools). Its Rochester Curriculum / open curriculum, with only one required course in Arts & Sciences, lets pre-med students combine a science major with clusters in other areas, and the adjacent University of Rochester Medical Center and Strong Memorial Hospital provide undergraduate research and clinical access. The 72% medical-school figure applies only to Rochester students who utilized the Greene Center health committee process, per Rochester's own wording — it is not a rate for all Rochester pre-med students."
+    }
+  ]
+}
