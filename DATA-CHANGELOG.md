@@ -45,3 +45,9 @@
 - generate_csv.py splits fees on "nonresident" phrasing too; Berkeley and UCLA rows had been mislabelled as private in the out-of-state column.
 - UT Austin's automatic-admission threshold updated to the top 5% for currently announced cycles (verified on UT Austin's official admissions page); the University of Houston entry now records the same Texas Education Code §51.803 statute the dataset already carried for the other Texas publics.
 - All sourced fields normalised to the full {status, value, source} shape (82 BS/MD needs_verification objects gained a source key; null values became empty strings), and the validator now enforces that shape. An entry_route field is scheduled for the annual refresh; until then the route is read from each entry's notes, with the entry's own application timing governing any ambiguity.
+
+## 2026-11-19 — Release-based distribution adopted (counted downloads, seamless Muse installs)
+
+- Distribution approach, Vinuraj's direction: every public version ships as a GitHub Release with downloadable zips, because release-asset downloads are counted exactly and permanently by GitHub, while clones and raw file pulls are not. Two assets per release: the skill folder alone (for Muse, Gemini CLI, and Codex folder installs) and the full repository tree (marketplace files included).
+- Muse install path documented in the README: the user asks their Muse to install PremedPilot from the latest release; the agent downloads the skill zip and places the folder in custom skills. Dataset updates then flow through the existing pull hook.
+- First release: v2026.11.19 on vinurajd/premedpilot. The same approach applies to the Semantic Layer Contract Checker skill at its launch.

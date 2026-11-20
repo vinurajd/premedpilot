@@ -15,6 +15,10 @@ The skill is a single `SKILL.md` folder, the open Agent Skills standard, so the 
 /plugin install premedpilot@vinurajd-skills
 ```
 
+### Muse
+
+Ask your Muse: "Install the PremedPilot skill from the latest release of vinurajd/premedpilot on GitHub." Your Muse downloads the skill zip from the repository's Releases page and places the `premedpilot` folder in your custom skills. After that, dataset updates arrive automatically through the skill's built-in update check.
+
 ### Gemini CLI
 
 ```bash
@@ -67,7 +71,7 @@ Questions about how it works, what the classifications mean, or how current the 
 
 ## Knowledge updates
 
-The two datasets are maintained in this repository, and installed copies of the skill pull updates from here. The skill's `scripts/update_knowledge.py` checks `references/knowledge-manifest.json` at most once a week, verifies each changed dataset against its published SHA-256 hash and the schema, and swaps it in, keeping the previous file as a backup. Offline, the bundled data is used and its date is stated to the student. Maintainers refresh the data once per admissions cycle under the protocol in the SKILL.md, and regenerate the manifest with `scripts/build_manifest.py` after every change.
+The two datasets are maintained in this repository, and installed copies of the skill pull updates from here. Each refresh is also published as a GitHub Release carrying a downloadable skill zip; those release downloads are the counted install channel, so please take the zip from Releases rather than cloning when you only want the skill. The skill's `scripts/update_knowledge.py` checks `references/knowledge-manifest.json` at most once a week, verifies each changed dataset against its published SHA-256 hash and the schema, and swaps it in, keeping the previous file as a backup. Offline, the bundled data is used and its date is stated to the student. Maintainers refresh the data once per admissions cycle under the protocol in the SKILL.md, and regenerate the manifest with `scripts/build_manifest.py` after every change.
 
 ## Data
 
